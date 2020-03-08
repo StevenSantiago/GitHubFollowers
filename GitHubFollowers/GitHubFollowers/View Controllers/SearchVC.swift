@@ -13,13 +13,20 @@ class SearchVC: UIViewController {
     let logoImageView = UIImageView()
     let userNameTextField = GFTextField()
     let getFollowersButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
+    
+    var isUserNameEntered : Bool {
+        return !userNameTextField.text!.isEmpty
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        userNameTextField.delegate = self
+        
         configureLogoImageView()
         configureTextField()
         configureGetFollowersButton()
+        createDismissKeyBoardTapGesture()
         // Do any additional setup after loading the view.
     }
     
@@ -28,6 +35,32 @@ class SearchVC: UIViewController {
         navigationController?.isNavigationBarHidden = true
     }
     
+    @objc func pushFollowerListVC() {
+        guard isUserNameEntered else {
+            //TODO: Display custom alert
+            print("No Name Entered!")
+//            let alertView  = UIAlertView(title: "No User Name Entered!", message: "Enter User Name", delegate: nil, cancelButtonTitle: "Ok")
+//            alertView.translatesAutoresizingMaskIntoConstraints = false
+//            alertView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+//            alertView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//            view.addSubview(alertView)
+            return
+        }
+        
+        let followerListVC = FollowerListVC()
+        followerListVC.userName = userNameTextField.text
+        followerListVC.title = userNameTextField.text
+        
+        navigationController?.pushViewController(followerListVC, animated:true)
+        
+    }
+    
+    func createDismissKeyBoardTapGesture() {
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        view.addGestureRecognizer(tap)
+    }
+    
+    //MARK: Configuring AutoLayout
     func configureLogoImageView() {
         view.addSubview(logoImageView)
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -53,6 +86,7 @@ class SearchVC: UIViewController {
     
     func configureGetFollowersButton() {
         view.addSubview(getFollowersButton)
+        getFollowersButton.addTarget(self, action: #selector(pushFollowerListVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             getFollowersButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
@@ -62,4 +96,12 @@ class SearchVC: UIViewController {
         ])
     }
 
+}
+
+extension SearchVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //TODO: Pass the data
+        pushFollowerListVC()
+        return true
+    }
 }

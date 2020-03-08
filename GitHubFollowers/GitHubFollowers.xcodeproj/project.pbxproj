@@ -17,6 +17,7 @@
 		07C8FEE72414893600FC9CC5 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8FEE62414893600FC9CC5 /* FavoritesListVC.swift */; };
 		07ED2260241494FA00788100 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED225F241494FA00788100 /* GFButton.swift */; };
 		07ED226224149DC800788100 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED226124149DC800788100 /* GFTextField.swift */; };
+		07ED22642414B2B500788100 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED22632414B2B500788100 /* FollowerListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		07C8FEE62414893600FC9CC5 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		07ED225F241494FA00788100 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		07ED226124149DC800788100 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		07ED22632414B2B500788100 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				07C8FEE62414893600FC9CC5 /* FavoritesListVC.swift */,
 				07C8FEE4241488F300FC9CC5 /* SearchVC.swift */,
+				07ED22632414B2B500788100 /* FollowerListVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				07C8FEE72414893600FC9CC5 /* FavoritesListVC.swift in Sources */,
 				07ED2260241494FA00788100 /* GFButton.swift in Sources */,
 				07C8FEE5241488F300FC9CC5 /* SearchVC.swift in Sources */,
+				07ED22642414B2B500788100 /* FollowerListVC.swift in Sources */,
 				07C8FEB52414725F00FC9CC5 /* AppDelegate.swift in Sources */,
 				07C8FEB72414725F00FC9CC5 /* SceneDelegate.swift in Sources */,
 			);
