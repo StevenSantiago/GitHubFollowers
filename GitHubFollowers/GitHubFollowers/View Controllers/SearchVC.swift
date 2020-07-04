@@ -37,13 +37,7 @@ class SearchVC: UIViewController {
     
     @objc func pushFollowerListVC() {
         guard isUserNameEntered else {
-            //TODO: Display custom alert
-            print("No Name Entered!")
-//            let alertView  = UIAlertView(title: "No User Name Entered!", message: "Enter User Name", delegate: nil, cancelButtonTitle: "Ok")
-//            alertView.translatesAutoresizingMaskIntoConstraints = false
-//            alertView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-//            alertView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//            view.addSubview(alertView)
+            presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter a username. We need to know who to look for 😅.", buttonTitle: "Ok")
             return
         }
         
