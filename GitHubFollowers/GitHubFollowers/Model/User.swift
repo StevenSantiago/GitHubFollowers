@@ -10,14 +10,14 @@ import Foundation
 
 struct User: Codable {
     var login: String
-    var avatar_url: String
+    var avatarUrl: String
     var name: String?
     var location: String?
     var bio: String?
-    var public_repos: Int
-    var public_gists: Int
-    var html_url: String
+    var publicRepos: Int
+    var publicGists: Int
+    var htmlUrl: String
     var following: Int
     var followers: Int
-    var created_at: String
+    var createdAt: String
 }
