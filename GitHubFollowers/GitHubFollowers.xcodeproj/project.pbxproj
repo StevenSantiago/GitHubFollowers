@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073C887024B17094009C53D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C886F24B17094009C53D1 /* Constants.swift */; };
 		07B02AA824AF24410091386B /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B02AA724AF24410091386B /* GFTitleLabel.swift */; };
 		07B02AAA24AF25DD0091386B /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B02AA924AF25DD0091386B /* GFBodyLabel.swift */; };
 		07B02AAC24AF26EF0091386B /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B02AAB24AF26EF0091386B /* GFAlertVC.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		073C886F24B17094009C53D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		07B02AA724AF24410091386B /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		07B02AA924AF25DD0091386B /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		07B02AAB24AF26EF0091386B /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073C886E24B17016009C53D1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				073C886F24B17094009C53D1 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		07B02AAD24B0ECCC0091386B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 		07C8FEB32414725F00FC9CC5 /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				073C886E24B17016009C53D1 /* Utilities */,
 				07B02AB624B0FE7B0091386B /* Manager */,
 				07B02AB124B0F1690091386B /* Model */,
 				07B02AAD24B0ECCC0091386B /* Extensions */,
@@ -333,6 +344,7 @@
 				07C8FEE72414893600FC9CC5 /* FavoritesListVC.swift in Sources */,
 				07ED2260241494FA00788100 /* GFButton.swift in Sources */,
 				07B02AB024B0ED090091386B /* UIViewController+Ext.swift in Sources */,
+				073C887024B17094009C53D1 /* Constants.swift in Sources */,
 				07C8FEE5241488F300FC9CC5 /* SearchVC.swift in Sources */,
 				07B02AAC24AF26EF0091386B /* GFAlertVC.swift in Sources */,
 				07B02AAA24AF25DD0091386B /* GFBodyLabel.swift in Sources */,
