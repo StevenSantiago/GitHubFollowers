@@ -27,5 +27,19 @@ class AvatarImageView: UIImageView {
         image = placeholderImage
         translatesAutoresizingMaskIntoConstraints = false
     }
-
+    
+    func downloadImage(from urlString: String) {
+        NetworkManager.instance.downloadImage(for: urlString) { [weak self] (result) in
+            guard let self = self else {return}
+            switch result {
+            case .success(let image):
+                DispatchQueue.main.async {
+                    self.image = image
+                }
+            default:
+                return
+            }
+        }
+    }
+    
 }
