@@ -51,10 +51,11 @@ class FollowerListVC: UIViewController {
   
     
     func getFollowers(username: String, page: Int) {
+        showLoadingView()
         NetworkManager.instance.getFollowers(for: userName, page: page) { [weak self] result in
             //Unwrapping optional self since it is weak
             guard let self = self else { return }
-            
+            self.dismissLoadingView()
             switch result {
                 
             case .success(let followers):
