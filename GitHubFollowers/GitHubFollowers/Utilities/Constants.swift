@@ -14,3 +14,7 @@ enum GFError: String, Error {
     case invalidResponse = "Invalid response from the server. Please Try Again."
     case invalidData = "The data received from the server was invalid. Please Try Again."
 }
+
+enum SFSymbols {
+    static let location = "mappin.and.ellipse"
+}
