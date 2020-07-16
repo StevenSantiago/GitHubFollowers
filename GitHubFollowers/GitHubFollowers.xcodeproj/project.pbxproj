@@ -23,6 +23,7 @@
 		07B02AB324B0F17A0091386B /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B02AB224B0F17A0091386B /* Follower.swift */; };
 		07B02AB524B0F23D0091386B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B02AB424B0F23D0091386B /* User.swift */; };
 		07B02AB824B0FE940091386B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B02AB724B0FE940091386B /* NetworkManager.swift */; };
+		07B21F6424C001E1004FEB6F /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B21F6324C001E1004FEB6F /* GFItemInfoVC.swift */; };
 		07C8FEB52414725F00FC9CC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8FEB42414725F00FC9CC5 /* AppDelegate.swift */; };
 		07C8FEB72414725F00FC9CC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8FEB62414725F00FC9CC5 /* SceneDelegate.swift */; };
 		07C8FEBE2414726000FC9CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C8FEBD2414726000FC9CC5 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		07B02AB224B0F17A0091386B /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		07B02AB424B0F23D0091386B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		07B02AB724B0FE940091386B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		07B21F6324C001E1004FEB6F /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
 		07C8FEB12414725F00FC9CC5 /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C8FEB42414725F00FC9CC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C8FEB62414725F00FC9CC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				07B02AAB24AF26EF0091386B /* GFAlertVC.swift */,
 				0775484824B812AD004880EE /* UserInfoVC.swift */,
 				077F27CF24BBA1800083E6E7 /* GFUserInfoHeaderVC.swift */,
+				07B21F6324C001E1004FEB6F /* GFItemInfoVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				07C8FEE72414893600FC9CC5 /* FavoritesListVC.swift in Sources */,
 				07ED2260241494FA00788100 /* GFButton.swift in Sources */,
 				07B02AB024B0ED090091386B /* UIViewController+Ext.swift in Sources */,
+				07B21F6424C001E1004FEB6F /* GFItemInfoVC.swift in Sources */,
 				073C887624B2EA32009C53D1 /* UIHelper.swift in Sources */,
 				073C887024B17094009C53D1 /* Constants.swift in Sources */,
 				07C8FEE5241488F300FC9CC5 /* SearchVC.swift in Sources */,
