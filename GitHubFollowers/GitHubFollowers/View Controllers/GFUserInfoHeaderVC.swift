@@ -22,9 +22,6 @@ class GFUserInfoHeaderVC: UIViewController {
     init(user: User) {
         super.init(nibName: nil, bundle: nil)
         self.user = user
-        addSubviews()
-        layoutUI()
-        configureUIElements()
     }
     
     func configureUIElements() {
@@ -46,8 +43,9 @@ class GFUserInfoHeaderVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        addSubviews()
+        layoutUI()
+        configureUIElements()
     }
     
     func addSubviews() {
