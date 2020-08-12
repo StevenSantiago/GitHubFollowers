@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070FDF8024E3B8B1003EA3F9 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FDF7F24E3B8B1003EA3F9 /* PersistenceManager.swift */; };
 		073C887024B17094009C53D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C886F24B17094009C53D1 /* Constants.swift */; };
 		073C887224B1782F009C53D1 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C887124B1782F009C53D1 /* FollowerCell.swift */; };
 		073C887424B178C0009C53D1 /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C887324B178C0009C53D1 /* AvatarImageView.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070FDF7F24E3B8B1003EA3F9 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		073C886F24B17094009C53D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		073C887124B1782F009C53D1 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		073C887324B178C0009C53D1 /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				07B02AB724B0FE940091386B /* NetworkManager.swift */,
+				070FDF7F24E3B8B1003EA3F9 /* PersistenceManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				073C887424B178C0009C53D1 /* AvatarImageView.swift in Sources */,
 				077F27D224BBA2550083E6E7 /* GFSecondaryTitleLabel.swift in Sources */,
 				076811F724B6B5D10083B53E /* GFEmptyStateView.swift in Sources */,
+				070FDF8024E3B8B1003EA3F9 /* PersistenceManager.swift in Sources */,
 				07ABA33424C3E46D00E494FA /* String+Ext.swift in Sources */,
 				07B02AB824B0FE940091386B /* NetworkManager.swift in Sources */,
 				07ED22642414B2B500788100 /* FollowerListVC.swift in Sources */,
