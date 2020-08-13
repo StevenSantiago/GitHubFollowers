@@ -27,6 +27,7 @@ enum PersistenceManager {
                 switch actionType {
                 case .add:
                     guard !retrieveFavorites.contains(favorite) else {
+                        completed(.alreadyFavorited)
                         return
                     }
                     retrieveFavorites.append(favorite)
@@ -34,7 +35,7 @@ enum PersistenceManager {
                     retrieveFavorites.removeAll {$0.login == favorite.login}
                 }
                 
-                completed(saveFavorites(favorites))
+                completed(saveFavorites(retrieveFavorites))
             case .failure(let error):
                 completed(error)
             }
