@@ -32,7 +32,12 @@ class SearchVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        userNameTextField.text = ""
         navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        userNameTextField.resignFirstResponder()
     }
     
     @objc func pushFollowerListVC() {
@@ -52,6 +57,21 @@ class SearchVC: UIViewController {
     func createDismissKeyBoardTapGesture() {
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         view.addGestureRecognizer(tap)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            // Check if the keyboard covers the bottom of textfield
+            let cover = userNameTextField.frame.origin.y + userNameTextField.frame.height - keyboardSize.minY // can also use keyboardSize.origin.y
+            
+            if cover > 0 {
+                self.view.frame.origin.y -= cover
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        self.view.frame.origin.y = 0
     }
     
     //MARK: Configuring AutoLayout
